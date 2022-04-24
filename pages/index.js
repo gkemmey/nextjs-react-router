@@ -26,7 +26,7 @@ export default function App() {
             <h1>About</h1>
           </Route>
           <Route path="/topics">
-            <h1>Topics</h1>
+            <h1>Topics {console.foo()}</h1> {/* intentional error */}
           </Route>
           <Route path="/">
             <h1>Home</h1>

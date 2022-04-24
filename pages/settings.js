@@ -1,7 +1,7 @@
 import React from 'react';
 import NextLink from 'next/link';
 
-export default function App(props: { message: string }) {
+export default function App(props) {
   return (
     <div>
       <p>{props.message}</p>

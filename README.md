@@ -1,3 +1,9 @@
+# [bug repro] can't display ReactDevOverlay on latest nextjs
+
+with the rewrites seems like mounting ReactDevOverlay causes things to infinitely render on page refresh. remove the rewrites from `next.config.js`, seems to work fine.
+
+---
+
 # Building a single page application with Next.js and React Router
 
 There are many reasons to use React Router inside a Next.js project! React Router is far more flexible than Next's router and makes it easy to share layout and state between among routes, even deeply nested ones. Doing this with Next.js requires consolidating all your shared logic in a custom `_app.tsx` component and using [complicated layout hacks](https://adamwathan.me/2019/10/17/persistent-layout-patterns-in-nextjs/).

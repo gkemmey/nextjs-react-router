@@ -1,6 +1,4 @@
-import { AppProps } from 'next/app';
-
-function App({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }) {
   return (
     <div suppressHydrationWarning>
       {typeof window === 'undefined' ? null : <Component {...pageProps} />}
